@@ -15,10 +15,15 @@
     <div class="viscera"><img src="images/VISCERA.png" alt="viscera" style="width: 100%; height: 100%; object-fit: contain; display: block"></div>
   </div>
 
-
-
     <div class="scene">
-      <div class="img1"><img src="images/fabricsoft.png" alt="fabricsoft" style="width: 2.5%; height: 2.5%"></div>
+    
+      <div class="overlay">
+    <div class="sidetable"><img src="images/SIDETABLE.png" alt="sidetable" style="width: 80%; height: 80%"></div>
+    <div class="lamp"><img src="images/lamp.png" alt="lamp" style="width: 80%; height: 80%"></div>
+    <div class="curtainleft"><img src="images/CURTAINLEFT.png" alt="curtainleft" style="width: 50%; height: 50%"></div>
+    <div class="curtainright"><img src="images/CURTAINRIGHT.png" alt="curtainright" style="width: 50%; height: 50%"></div>  
+  </div>
+
   <div class="panel1">
     <div class="box">1</div>
     <div class="box">2</div>
@@ -40,7 +45,7 @@
     <div class="box">18</div>
     <div class="box">19</div>
     <div class="box">20</div>
-    <div class="box">21</div>
+    <div class="box cowgallop"></div>
     <div class="box">22</div>
     <div class="box">23</div>
     <div class="box">24</div>
@@ -70,10 +75,10 @@
 <div class = "panel2">
     <div class="box">46</div>
     <div class="box">47</div>
-    <div class="box">48</div>
+    <div class="box boxuparrow"></div>
     <div class="box">49</div>
-    <div class="box">50</div>
-    <div class="box">51</div>
+    <div class="box boxleftarrow"></div>
+    <div class="box boxdownarrow"></div>
     <div class="box">52</div>
     <div class="box">53</div>
     <div class="box">54</div>
@@ -89,7 +94,7 @@
     <div class="box">61</div>
     <div class="box">62</div>
     <div class="box">63</div>
-    <div class="box">64</div>
+    <div class="box boxrightarrow"></div>
     <div class="box">65</div>
     <div class="box">66</div>
     <div class="box">67</div>
@@ -157,16 +162,16 @@
 
     <div class="panel8">
     <div class="box">116</div>
-    <div class="box">117</div>
-    <div class="box">118</div>
+    <div class="box dairy1"></div>
+    <div class="box dairy3"></div>
     <div class="box">119</div>
     <div class="box">120</div>
   </div>
 
   <div class="panel9">
     <div class="box">121</div>
-    <div class="box">122</div>
-    <div class="box">123</div>
+    <div class="box dairy2"></div>
+    <div class="box dairy4"></div>
     <div class="box">124</div>
     <div class="box">125</div>
     </div>
@@ -188,20 +193,6 @@
     </div>
 
 </div>
-<script>
-document.addEventListener("keydown", function (e) {
-  const scene = document.querySelector(".scene");
-  if (!scene) return;
 
-  const step = 50;
-  if (e.key === "ArrowRight") {
-    scene.scrollLeft += step;
-    e.preventDefault();
-  } else if (e.key === "ArrowLeft") {
-    scene.scrollLeft -= step;
-    e.preventDefault();
-  }
-});
-</script>
 </body>
 </html>
