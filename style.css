@@ -1,4 +1,67 @@
 
+
+.bodyparts {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    top: 50px;
+    left: 50px;
+    gap: 5px;
+    position: fixed;
+    z-index: 9999;
+}
+
+.hide {
+    display: flex;
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+}  
+
+
+.meatcuts {
+    display: flex;
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+}  
+
+.muscle {
+    display: flex;
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+}  
+
+.skeleton {
+    display: flex;
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+}  
+
+.viscera {
+    display: flex;
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+}  
+
 body {
 	background-image: url("images/perspectivegridinfinity.png");
     background-size: cover;
@@ -22,12 +85,13 @@ body, html {
     gap: 5px;
     perspective: 1200px;
     height: 100vh;
-    scroll-snap-type: x mandatory;
-    scrollbar-width: none;
 }
 
-.scene::-webkit-scrollbar {
-    display: none; 
+.img1 {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    z-index:9998
 }
 
 .panel1, .panel2, .panel3, .panel4, .panel5, .panel6, .panel7, .panel8, .panel9, .panel10, .panel11 {
@@ -37,6 +101,7 @@ body, html {
     gap: 5px;
     transform-style: preserve-3d;
     flex-shrink: 0;
+    scroll-snap-align: start;
 }
 
 .panel1 {
@@ -44,7 +109,6 @@ body, html {
     grid-template-rows: repeat(5, 1fr);
     transform: rotatey(90deg);
     margin-left: -160px;
-    scroll-snap-align: start;
 }
 
 .panel2 {
@@ -115,6 +179,5 @@ body, html {
     background-color: lightsalmon;
     align-items: center;
     justify-content: center;
-    transform: rotateY(calc(var(--i) * -12deg)) translateZ(200px);
   transform-style: preserve-3d;
 }
