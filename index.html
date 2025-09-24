@@ -15,6 +15,7 @@
     <div class="viscera"><img src="images/VISCERA.png" alt="viscera" style="width: 100%; height: 100%; object-fit: contain; display: block"></div>
   </div>
 
+  <div class="container">
     <div class="scene">
     
       <div class="overlay">
@@ -191,8 +192,18 @@
     <div class="box">134</div>
     <div class="box">135</div>
     </div>
-
 </div>
+</div>
+<script>
+  const container = document.querySelector('.container');
+  let zMove = 0;
+
+  window.addEventListener('wheel', (e) => {
+    e.preventDefault(); // stop normal page scroll
+    zMove += e.deltaY; // scroll down = deeper, scroll up = closer
+    container.style.transform = `translateZ(${-zMove}px)`;
+  }, { passive: false });
+</script>
 
 </body>
 </html>
